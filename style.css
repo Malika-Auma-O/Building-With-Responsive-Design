@@ -1,0 +1,355 @@
+/* reset */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(241, 242, 244);
+}
+
+/* Navbar */
+
+.nav-container li {
+  list-style: none;
+  margin: 10px;
+}
+
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.nav-list1 {
+  display: flex;  
+}
+
+.nav-list2 {
+  display: flex;
+}
+
+.nav-list2 input {
+  width: 30px;
+}
+
+.navbar2 {
+  background: white;
+  /* position: fixed; 
+  top: 100;
+  left: 0;
+  z-index: 100; */
+}
+
+.nav-list3 {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list3 img {
+  width: 30px;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+
+/* main section */
+
+.main-container {
+  margin-top: 10px;
+}
+
+/* section 1 */
+
+.grid1-container {
+  max-width: 1500px;
+  height: 100vh;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "img1 img1 img1 img1 img2 img2 img3 img3"
+                       "img1 img1 img1 img1 img2 img2 img3 img3"
+                       "img1 img1 img1 img1 img5 img5 img5 img5"
+                       "img4 img4 img4 img4 img5 img5 img5 img5"
+                       "img4 img4 img4 img4 img5 img5 img5 img5"
+                       ;
+}
+
+.grid-item {
+  margin: 3px;
+  position: relative;
+  max-width: 100%;
+}
+
+.grid-item .text {
+  position: absolute;
+  max-width: 100%;
+}
+
+.grid-item .overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(35, 50, 168, 0.2), rgba(3, 3, 10, 0.4), rgba(0, 0, 0, 1));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.grid-item1 .image {
+  width: 100%;
+  height: 100%;
+  background: url(./images/section1-images/bg-1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.grid-item1 {
+  grid-area: img1;
+}
+
+.grid-item2 .image {
+  width: 100%;
+  height: 100%;
+  background: url(./images/section1-images/AI.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.grid-item2 {
+  grid-area: img2;
+}
+
+.grid-item3 .image {
+  width: 100%;
+  height: 100%;
+  background: url(./images/section1-images/sustainability.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.grid-item3 {
+  grid-area: img3;
+}
+
+.grid-item4 .image {
+  width: 100%;
+  height: 100%;
+  background: url(./images/section1-images/proximage5.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.grid-item4 {
+  grid-area: img4;
+}
+
+.grid-item5 .image {
+  width: 100%;
+  height: 100%;
+  background: url(./images/section1-images/Untitled-design-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.grid-item5 {
+  grid-area: img5;
+}
+
+
+/* section 2 */
+
+.grid2-container {
+  margin: 40px auto;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "img2-1 img2-2 img2-3 img2-4 img2-5";
+}
+
+.grid2-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.grid2-item {
+  margin: 3px;
+  max-width: 100%;
+}
+
+.grid2-item .image {
+  margin-bottom: 20px;
+}
+
+.grid2-item1 .image {
+  background: url(./images/section2-images/image1.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.grid2-item1 {
+  grid-area: img2-1;
+}
+
+.grid2-item2 .image {
+  background: url(./images/section2-images/image2.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.grid2-item2 {
+  grid-area: img2-2;
+}
+.grid2-item3 .image {
+  background: url(./images/section2-images/image3.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.grid2-item3 {
+  grid-area: img2-3;
+}
+
+.grid2-item4 .image {
+  background: url(./images/section2-images/image4.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.grid2-item4 {
+  grid-area: img2-4;
+
+}
+.grid2-item5 .image {
+  background: url(./images/section2-images/image5.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.grid2-item5 {
+  grid-area: img2-5;
+}
+
+.section2-title {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* Tablets and large phones */
+
+@media (max-width: 1000px) {
+  .grid1-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "img1 img1 img1"
+                         "img1 img1 img1"
+                         "img2 img2 img5"
+                         "img3 img4 img4"
+                         ;
+  }
+
+  .grid2-container  {
+    margin: 10px 30px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img2-1 text1"
+                         "img2-2 text2"
+                         "img2-3 text3"
+                         "img2-4 text4"
+                         "img2-5 text5";
+  }
+
+  .grid2-item1 .image {
+    grid-area: img2-1;    
+  }
+
+  .grid2-item1 p{
+    grid-area: text1;
+  }
+
+  .grid2-item2 .image {
+    grid-area: img2-2;    
+  }
+
+  .grid2-item2 p{
+    grid-area: text2;
+  }
+
+  .grid2-item3 .image {
+    grid-area: img2-3;    
+  }
+
+  .grid2-item3 p{
+    grid-area: text3;
+  }
+
+  .grid2-item4 .image {
+    grid-area: img2-4;    
+  }
+
+  .grid2-item4 p{
+    grid-area: text4;
+  }
+
+  .grid2-item5 .image {
+    grid-area: img2-5;    
+  }
+
+  .grid2-item5 p{
+    grid-area: text5;
+  }
+
+}
+
+/* for small phones */
+
+.navbar1 .nav-list3 {
+  justify-content: left;
+  
+}
+
+@media (max-width: 764px) {
+  .grid1-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "img1 img1 img1 img1 img2 img2"
+                         "img1 img1 img1 img1 img2 img2"
+                         "img1 img1 img1 img1 img2 img2"
+                         "img1 img1 img1 img1 img2 img2"
+                         "img4 img4 img4 img4 img4 img4"
+                         "img4 img4 img4 img4 img4 img4"
+                         "img4 img4 img4 img4 img4 img4"
+                         ;
+  }
+
+}
